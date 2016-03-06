@@ -1,0 +1,163 @@
+/* -------- seleção mouse ----------*/
+::-webkit-selection {background: #fffde7; color: #c51162; }
+::selection{ background: #fffde7; color: #c51162; }
+::-moz-selection { background: #fffde7; color: #c51162; }
+
+section{display:none;}
+section .container{max-width: 960px}
+/*------- texto --------*/
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2em !important;
+}
+.h1{
+    font-size: 2.8em;
+    font-family: 'Cookie', cursive;
+    margin: 9% auto;
+}
+.hi{
+    font-size: 7em;
+    font-family: 'Cookie', cursive;
+}
+/*----- estrutura -----*/
+main{
+    min-height: 100vmin;
+    width: 100v;
+    overflow: hidden; /*scroll;*/
+    /*text-align: center;*/
+    padding: 13% 0% 1%;
+    /*background: repeating-linear-gradient(135deg,#c51162,#c51162 4px,#ad1457 5px,#ad1457 7px);*/
+    /*background: rgb(255,88,121); //rosa medio vivo;*/
+    /*background: rgb(244,94,132); // rosa medio escuro;*/
+    background: rgb(235,54,138);  //rosa pink;
+}
+/*texto sobre*/
+.about{
+    margin-top: ;
+    font-size: 1.4em;
+}
+
+#btn-about{
+    margin-top: 28vmin;
+    margin-bottom: 2vmin;
+    padding: 10px;
+    background-color:transparent;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* botões */
+#btn-about a:visited, #btn-about a:link, #btn-about a:active, #btn-about a:hover{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    border: rgb(255,88,121) 1px solid;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+#btn-about a:hover{
+    background-color: rgb(244,94,132);
+}
+
+/*  -------  icons social  -------  */
+.social{margin-top: 10vmin;}
+
+#contato, #sobre{
+    height: 100vmin;
+    width: 100v;
+    overflow: hidden;
+    background: rgb(58,181,215);
+    text-align: center;
+}
+#contato a:visited,#contato a:link,#contato a:active{
+    margin: 50% 1%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffee58;
+}
+.icon:after, .icon:before{ /*icon social*/
+    //color: #fffde7;
+    font-size: 1.9em;
+    text-decoration: none;
+}
+
+/*----- portfólio carrosel-------*/
+#portfolio{
+    min-height: 120vmin;
+    width: 100v;
+    overflow: hidden;
+    background: rgb(225,205,106);
+    text-align: center;
+}
+#portfolio p{font-size: 1.4em !important;}
+.carousel{
+    max-width: 700px;
+    min-width: 240px;
+    margin: 3% auto;
+}
+/*quadro de imagens carousel*/
+.carousel-inner{
+    max-width: 500px;
+    margin: auto;
+    z-index: 0;
+    padding-bottom: 110px;
+}
+/*bolinha indicador*/
+.carousel-indicators li{
+    margin-bottom: 50px;
+    padding-top: 0px;
+    /*border-color: white;*/
+    border-color: #ffee58;
+}
+/*bolinha indicador active*/
+.carousel-indicators .active{
+    margin-bottom:49px;
+    padding-top: 0px;
+    /*background-color: white;*/
+    background-color: #ffee58;
+    border-color: rgb(225,205,106);
+}
+/*setas controle*/
+.carousel-control.left , .carousel-control.right{
+    color: #ffee58;
+    background-image: -webkit-linear-gradient(left, transparent,transparent);
+    background-image: -moz-linear-gradient(left, transparent,transparent);
+    background-image: -ms-linear-gradient(left, transparent,transparent);
+    background-image: -o-linear-gradient(left, transparent,transparent);
+    margin: 0px;
+    padding: 0px;
+}
+.carousel-caption>p{
+    font-size: 1.3em;
+    color: white;
+    margin: 30% auto !important;
+    padding-bottom: 30px;
+    position: absolute;
+    text-shadow: none !important;
+    text-align: center !important;
+}
+
+/*---------- sobre ----------*/
+#sobre{
+    background: rgb(255,126,86); /*rosa*/
+}
+/* ----------- efeitos ------------ */
+/*-- icon-down --*/
+/*{ //no css;
+    -webkit-animation: icon-down 1.7s linear 1s infinite;
+    animation: icon-down 1.7s linear 1s infinite;
+}*//*
+@-webkit-keyframes icon-down {//Chrome, Safari, Opera
+    0%   {top:0px;}
+    50%  {top:15px;
+    100%  {top:0px; color:;}
+}@keyframes icon-down {// Standard syntax
+    0%   {top:0px;}
+    50%  {top:15px;
+    100%  {top:0px;}
+}*/
+
+@media(max-width: 600px) {
+    .hi{text-align: center;}
+}
